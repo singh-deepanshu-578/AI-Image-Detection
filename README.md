@@ -1,9 +1,9 @@
 # AI-Image-Detection
 <h1>HOME PAGE</h1>
-<img src="HomePage.png">
+<img src="Home.png">
 <br>
 <h1>BILLING PAGE</h1>
-<img src="BillingPage.png">
+<img src="Billing.png">
 <br>
 <h1>CONTACT PAGE</h1>
-<img src="ContactPage.png">
+<img src="Contact.png">
