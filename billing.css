@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #1a237e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sidebar .links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.sidebar .bottom-links {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+.tabs a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #1a237e;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+.tabs a.active {
+    border-bottom: 2px solid #1a237e;
+}
+.plans {
+    display: flex;
+    justify-content: space-between;
+}
+.plan {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 18%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.plan h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.plan .price {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.plan .features {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.plan .choose-btn {
+    background-color: #1a237e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.plan .choose-btn:hover {
+    background-color: #3949ab;
+}
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
