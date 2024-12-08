@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
  <head>
   <title>
@@ -16,8 +17,13 @@
                     <a href="billing.html">Billing</a>
                 </div>
             </div>
-            <div class="bottom-links">
-                <a href="contact.html">Contact</a>
+            <div class="bottom-links"> 
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Learn More</span>
+                </button>
             </div>
         </div>
    <div class="content">
@@ -25,7 +31,7 @@
      Test images manually
     </h2>
     <div class="image-container">
-     <img alt="AI generated Image" height="400" src="ai-image.jpg" width="600"/>
+     <img alt="AI generated image" height="400" src="ai-image.jpg" width="600"/>
     </div>
     <div class="results">
      <div class="result">
@@ -84,14 +90,29 @@
       </p>
      </div>
     </div>
-    <div class="upload-instructions">
-     Drop an image anywhere or
-     <a href="#">
-      upload one
-     </a>
-     from your device to check if it's AI-generated.
-    </div>
+    <!-- <div class="upload-instructions">
+        Drop an image anywhere or
+        <a href="#" onclick="document.getElementById('fileInput').click(); return false;">
+         upload one
+        </a>
+        from your device to check if it's AI-generated.
+        <input class="hidden-file-input" id="fileInput" type="file"/> 
+    </div> -->
+    <button class="animated-button">
+    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+    </svg>
+    <span class="text">
+        <a href="#" onclick="document.getElementById('fileInput').click(); return false;">Upload Image</a>
+    </span>
+    <span class="circle"></span>
+    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+    </svg>
+    </button>
    </div>
   </div>
+  <div id="gradient"></div>
+  <script type="module" src="gradient.ts"></script>
  </body>
 </html>
