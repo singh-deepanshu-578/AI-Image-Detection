@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>
-   AI Image Detection
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>AI Image Detection</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
  </head>
  <body>
     <div class="container">
@@ -20,7 +19,7 @@
             <div class="bottom-links"> 
                 <button class="learn-more">
                     <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
+                        <span class="icon arrow"></span>
                     </span>
                     <span class="button-text">
                         <a href="contact.html">Learn More</a>
@@ -35,54 +34,45 @@
     </div>
     <div class="results">
         <div class="result">
-            <h3>Likely AI-generated</h3>
+            <h3>AI</h3>
             <p>GenAI</p>
             <div class="bar">
                 <div class="fill" style="width: 98%;"></div>
             </div>
             <p>98%</p>
-            <p>Face manipulation</p>
-      <div class="bar">
-       <div class="fill" style="width: 0%;">
-       </div>
-      </div>
-      <p>
-       0%
-      </p>
-     </div>
-     <div class="result">
-      <h3>
-       Diffusion
-       <i class="fas fa-question-circle">
-       </i>
-      </h3>
-      <p>
-       Upload image to view results
-      </p>
-     </div>
-     <div class="result">
-      <h3>
-       GAN
-       <i class="fas fa-question-circle">
-       </i>
-      </h3>
-      <p>
-       Upload image to view results
-      </p>
-     </div>
-     <div class="result">
-      <h3>
-       Other
-       <i class="fas fa-question-circle">
-       </i>
-      </h3>
-      <p>
-       Upload image to view results
-      </p>
-     </div>
+        </div>
+        <div class="result">
+            <h3>Diffusion
+                <i class="fas fa-question-circle"></i>
+            </h3>
+            <div class="bar">
+                <div class="fill" style="width: 97%;"></div>
+            </div>
+            <p>97%</p>
+            <span class="tooltip">Diffusion models are generative AI systems that create images, videos, and data by adding random noise to an image and learning to reverse it, producing high-quality outputs like Stable Diffusion.</span>
+        </div>
+        <div class="result">
+            <h3>GAN
+                <i class="fas fa-question-circle"></i>
+            </h3>
+            <div class="bar">
+                <div class="fill" style="width: 96%;"></div>
+            </div>
+            <p>96%</p>
+            <span class="tooltip">GANs (Generative Adversarial Networks) use two competing networks—Generator (creates fake images) and Discriminator (detects fakes). They generate realistic images, train AI for detection, and improve fake image identification systems.</span>
+        </div>
+        <div class="result">
+            <h3>Other
+                <i class="fas fa-question-circle"></i>
+            </h3>
+            <p>Upload image to view results</p>
+        </div>
     </div>
     <input type="file" id="fileInput" style="display: none;" accept="image/*">
-    <button class="animated-button" > 
+    <button class="animated-button" >
+        <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+        </span>
     <div class="robot-face">
         <div class="face">
             <div class="eyes">
@@ -101,7 +91,6 @@
     </button>
    </div>
   </div>
-  <div id="gradient"></div>
   <script src="script.js"></script>
  </body>
 </html>
