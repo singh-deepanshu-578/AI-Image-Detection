@@ -32,6 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.getElementById('fileInput').addEventListener('change', function(e) {
+    const resultDivs = document.querySelectorAll('.result');
+    resultDivs.forEach(div => {
+        const paragraphs = div.querySelectorAll('p');
+        paragraphs.forEach(p => p.remove());
+        
+        const newParagraph = document.createElement('p');
+        newParagraph.textContent = '0%';
+        div.insertBefore(newParagraph, div.querySelector('.bar'));
+        
+        const fill = div.querySelector('.fill');
+        if (fill) fill.style.width = '0%';
+    });
+});
+
 document.addEventListener('mousemove', (e) => {
     const eyes = document.querySelectorAll('.eye');
     eyes.forEach(eye => {
